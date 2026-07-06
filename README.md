@@ -4,6 +4,8 @@ Real-time HoMM 3 HotA overlay for Twitch streamers, powered by [hotameta.com](ht
 
 Shows in your stream: template name, both players with town icons, hero names, ratings, and gold trade.
 
+![screenshot](Screenshot%202026-07-06%20213341.png)
+
 ## Requirements
 
 - [Node.js](https://nodejs.org/) (v18+)
@@ -11,9 +13,11 @@ Shows in your stream: template name, both players with town icons, hero names, r
 
 ## Setup
 
-1. **Edit `server.js`** — change the streamer name on line 14:
-   ```js
-   const STREAMER = config.streamer_name || 'YourHotAName';
+1. **Create `config.json`** in the project folder:
+   ```json
+   {
+     "streamer_name": "YourHotAName"
+   }
    ```
    Replace `YourHotAName` with your actual HotA in-game username (the one shown on hotameta.com).
 
@@ -43,18 +47,16 @@ When no game is active, it shows "No game in progress". It updates automatically
 - Double-click `stop.bat`, or
 - Press `Ctrl+C` in the terminal where the server is running
 
-## Configuration (optional)
+## Configuration
 
-Create `config.json` alongside `server.js` to override defaults:
+All settings in `config.json`:
 
-```json
-{
-  "streamer_name": "YourHotAName",
-  "poll_interval": 10
-}
-```
+| Key | Default | Description |
+|-----|---------|-------------|
+| `streamer_name` | (required) | Your HotA in-game username |
+| `poll_interval` | `10` | API poll interval in seconds |
 
-`poll_interval` is in seconds (default 10).
+Or set via environment variable `STREAMER_NAME`.
 
 ## Files
 
@@ -63,6 +65,7 @@ Create `config.json` alongside `server.js` to override defaults:
 ├── start.bat          Double-click to start
 ├── stop.bat           Double-click to stop
 ├── package.json
+├── config.json        Your streamer name (create this)
 ├── public/
 │   ├── index.html     Overlay layout
 │   ├── style.css      Overlay styling

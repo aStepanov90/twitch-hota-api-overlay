@@ -11,7 +11,11 @@ try {
   config = JSON.parse(fs.readFileSync(path.join(__dirname, 'config.json'), 'utf8'));
 } catch (_) {}
 
-const STREAMER = config.streamer_name || 'Amiloo';
+const STREAMER = config.streamer_name || process.env.STREAMER_NAME;
+if (!STREAMER) {
+  console.error('Error: streamer_name not set. Create config.json with {"streamer_name":"YourName"} or set STREAMER_NAME env var.');
+  process.exit(1);
+}
 const POLL_INTERVAL = (config.poll_interval || 10) * 1000;
 const API_URL = `https://hotameta.com/api/lobby/player/${STREAMER}`;
 
