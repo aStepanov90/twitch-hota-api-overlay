@@ -15,14 +15,7 @@ Shows in your stream: template name, both players with town icons, hero names, r
 
 1. **Edit `config.json`** in the project folder — replace `YourHotAName` with your actual HotA in-game username (the one shown on hotameta.com).
 
-2. **Install dependencies** (one time):
-   ```
-   npm install
-   ```
-
-3. **Start the server**:
-   - Double-click `start.bat`, or
-   - Run `npm start` in a terminal
+2. **Start the server** — double-click `start.bat` (dependencies install automatically on first run).
 
 4. **Add to OBS**:
    - Add a new **Browser** source
