@@ -13,13 +13,7 @@ Shows in your stream: template name, both players with town icons, hero names, r
 
 ## Setup
 
-1. **Create `config.json`** in the project folder:
-   ```json
-   {
-     "streamer_name": "YourHotAName"
-   }
-   ```
-   Replace `YourHotAName` with your actual HotA in-game username (the one shown on hotameta.com).
+1. **Edit `config.json`** in the project folder — replace `YourHotAName` with your actual HotA in-game username (the one shown on hotameta.com).
 
 2. **Install dependencies** (one time):
    ```
@@ -65,7 +59,7 @@ Or set via environment variable `STREAMER_NAME`.
 ├── start.bat          Double-click to start
 ├── stop.bat           Double-click to stop
 ├── package.json
-├── config.json        Your streamer name (create this)
+├── config.json        Your streamer name (edit this)
 ├── public/
 │   ├── index.html     Overlay layout
 │   ├── style.css      Overlay styling
