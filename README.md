@@ -4,8 +4,6 @@ Real-time HoMM 3 HotA overlay for Twitch streamers, powered by [hotameta.com](ht
 
 Shows in your stream: template name, both players with town icons, hero names, ratings, and gold trade.
 
-![screenshot](Screenshot%202026-07-06%20213341.png)
-
 [Download latest release (ZIP)](https://github.com/aStepanov90/twitch-hota-api-overlay/archive/refs/tags/v1.0.0.zip)
 
 ## Requirements
