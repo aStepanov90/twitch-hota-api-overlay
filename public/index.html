@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HoMM3 HotA Overlay</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="overlay">
+    <div class="header">
+      <span id="template-name">Waiting for game...</span>
+    </div>
+    <div class="players">
+      <div class="player" id="p1">
+        <div class="color-badge" id="p1-color"></div>
+        <img class="city-icon" id="p1-icon" src="icons/default.png" alt="">
+        <div class="player-info">
+          <div class="name-row"><span class="player-name" id="p1-name"></span><span class="rating" id="p1-rating"></span></div>
+          <div class="hero-row"><span class="hero-name" id="p1-hero"></span><span class="gold" id="p1-gold"></span></div>
+        </div>
+      </div>
+      <div class="vs">vs</div>
+      <div class="player" id="p2">
+        <div class="color-badge" id="p2-color"></div>
+        <img class="city-icon" id="p2-icon" src="icons/default.png" alt="">
+        <div class="player-info">
+          <div class="name-row"><span class="player-name" id="p2-name"></span><span class="rating" id="p2-rating"></span></div>
+          <div class="hero-row"><span class="hero-name" id="p2-hero"></span><span class="gold" id="p2-gold"></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
