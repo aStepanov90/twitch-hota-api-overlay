@@ -6,6 +6,8 @@ Shows in your stream: template name, both players with town icons, hero names, r
 
 ![screenshot](Screenshot%202026-07-06%20213341.png)
 
+[Download latest release (ZIP)](https://github.com/aStepanov90/twitch-hota-api-overlay/archive/refs/tags/v1.0.0.zip)
+
 ## Requirements
 
 - [Node.js](https://nodejs.org/) (v18+)
