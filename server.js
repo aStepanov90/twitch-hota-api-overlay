@@ -16,7 +16,7 @@ if (!STREAMER) {
   console.error('Error: streamer_name not set. Create config.json with {"streamer_name":"YourName"} or set STREAMER_NAME env var.');
   process.exit(1);
 }
-const POLL_INTERVAL = (config.poll_interval || 10) * 1000;
+const POLL_INTERVAL = (config.poll_interval || 20) * 1000;
 const API_URL = `https://hotameta.com/api/lobby/player/${STREAMER}`;
 
 const gameState = {

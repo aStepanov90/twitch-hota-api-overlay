@@ -41,7 +41,7 @@ All settings in `config.json`:
 | Key | Default | Description |
 |-----|---------|-------------|
 | `streamer_name` | (required) | Your HotA in-game username |
-| `poll_interval` | `10` | API poll interval in seconds |
+| `poll_interval` | `20` | API poll interval in seconds |
 
 Or set via environment variable `STREAMER_NAME`.
 
